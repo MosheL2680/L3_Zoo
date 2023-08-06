@@ -11,23 +11,71 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for the "stick" div */
+        #stick {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            /* Adjust the z-index to make sure the menu stays on top */
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .topmenu {
+            padding: 1rem;
+            margin: 0;
+            border: none;
+        }
+
+        .topmenu-end {
+            flex: 1;
+        }
+
+        .iframe-container {
+            margin-top: 5rem;
+            /* Add some top margin to avoid overlapping with the fixed header */
+        }
+
+        .iframe {
+            border: none;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="header">
-        <header>
-            <h1>Moshe's zoo</h1>
-        </header>
-    </div>
-    <div style="display: flex;">
-        <div class="topmenu"><a class="link" href="animals.html" target="main">Our animals</a></div>
-        <div class="topmenu"><a class="link" href="opening.html" target="main"> Opening houres</a></div>
-        <div class="topmenu"> <a class="link" href="anout.html" target="main">About</a></div>
-        <div class="topmenu"><a class="link" href="contact_us.html" target="main">Contact us</a></div>
-        <div class="topmenu-end"></div>
-
+    <div id="stick">
+        <div class="header">
+            <header>
+                <h1>Moshe's zoo</h1>
+            </header>
+        </div>
+        <div style="display: flex;">
+            <div class="topmenu"><a class="link" href="animals.html" target="main">Our animals</a></div>
+            <div class="topmenu"><a class="link" href="opening.html" target="main"> Opening hours</a></div>
+            <div class="topmenu"> <a class="link" href="about.html" target="main">About</a></div>
+            <div class="topmenu"><a class="link" href="contact_us.html" target="main">Contact us</a></div>
+            <div class="topmenu-end"></div>
+        </div>
     </div>
     <div class="iframe-container"><iframe name="main" class="iframe"></iframe></div>
+    <script>
+        alert("This website is under construction")
+    </script>
 
 </body>
 
